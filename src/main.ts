@@ -8,6 +8,11 @@ document
     const form = e.currentTarget;
 
     if (form && form instanceof HTMLFormElement) {
+      const submitButton = form.querySelector("[type='submit']");
+      submitButton?.setAttribute("disabled", "true");
+      submitButton?.classList.replace("cursor-pointer", "cursor-not-allowed");
+      submitButton?.classList.add("opacity-50");
+
       grecaptcha.ready(function () {
         grecaptcha
           .execute("6LfZf88rAAAAAL7Jc8esU-j4a_v6Vu-z_K_XouGx", {
@@ -23,6 +28,9 @@ document
               headers: {
                 Accept: "application/json",
               },
+            }).then(() => {
+              document.getElementById("contact")!.innerHTML =
+                "<h1>Thank you, we'll be in touch soon.</h1>";
             });
           });
       });
