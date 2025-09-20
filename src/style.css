@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif:
+    "Antic Didone", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, -apple-system;
+  --color-dylan-background: #f4f1e8;
+  --color-dylan-accent: #8b371d;
+}
+
+@layer base {
+  h1,
+  h2 {
+    @apply font-serif;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-xl mt-8 mb-2;
+  }
+
+  p {
+    @apply my-4 text-justify;
+  }
+
+  .form-field {
+    @apply p-2 my-4 border w-full rounded-md;
+  }
+}

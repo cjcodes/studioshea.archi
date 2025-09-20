@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    />
+    <title>Vite + TS</title>
+  </head>
+  <body class="bg-(--color-dylan-background) text-(--color-dylan-accent)">
+    <header class="mx-auto max-w-7xl p-8">
+      <nav
+        class="flex flex-wrap items-start justify-center font-serif text-xl uppercase"
+      >
+        <!-- <div class="hidden md:flex md:flex-1 p-4 justify-center md:items-start"> -->
+        <!--   <a href="#">Projects</a> -->
+        <!-- </div> -->
+        <!-- <div class="hidden md:flex md:flex-1 p-4 justify-center md:items-start"> -->
+        <!--   <a href="#about">About</a> -->
+        <!-- </div> -->
+        <img
+          src="/logo.png"
+          width="300"
+          height="300"
+          alt="Studio Shea Architecture Ltd."
+        />
+        <!-- <div class="hidden md:flex md:flex-1 p-4 justify-center md:items-start"> -->
+        <!--   <a href="#services">Services</a> -->
+        <!-- </div> -->
+        <!-- <div class="hidden md:flex md:flex-1 p-4 justify-center md:items-start"> -->
+        <!--   <a href="#contact">Contact</a> -->
+        <!-- </div> -->
+      </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto font-light">
+      <a id="about"></a>
+      <div class="flex py-16">
+        <div class="mr-8 w-xs">
+          <img src="/Headshot_Sepia.jpg" width="100%" />
+        </div>
+        <div class="flex-1">
+          <div class="flex items-baseline">
+            <h1>Dylan Harm</h1>
+            <h2 class="my-0">, ARB, NCARB, LEED G.A.</h2>
+          </div>
+          <h3 class="mb-6">Founder &amp; Director</h3>
+
+          <p>
+            For more than a decade, I have been fortunate to have had an
+            expansive and varied career path. Having been educated and trained
+            in New York City, my experience is rooted in an understanding of how
+            to work within a dense urban context. In time, opportunity led me
+            across the country to San Francisco, California, which truly
+            fostered the flexibility required to work across jurisdictions with
+            vastly different regulations and design considerations. This helped
+            to build my confidence when relocating again, this time to the U.K.,
+            and despite not yet holding local qualifications, I soon found
+            myself in a well-appointed role working on complex projects. The
+            practical experience I gained was foundational to understanding how
+            to practise in the U.K., though after some time, I felt I needed to
+            formally (re)acquire the title I’d worked so hard to earn abroad.
+            This endeavour required a dedicated focus on preparing for and
+            sitting an examination with the ARB, in which I was ultimately
+            successful.
+          </p>
+          <p>
+            Today, I am a registered architect in both the U.K. and multiple
+            U.S. states with a total of eleven years of experience, more than
+            four of which were gained post-qualification. My overall project
+            contributions span many typologies across all project stages,
+            largely positioned in roles related to design development, technical
+            detailing, construction support, and sustainability administration.
+            Most recently, I have worked on several large and complex aviation
+            projects for major London-area airports as a multi-package lead
+            across RIBA Stages 3 – 5. My focus has now shifted to a 5+ year
+            career outlook with an emphasis on increasing project ownership,
+            honing my skills and developing new ones, building long-term
+            relationships, and meaningfully contributing to the firm’s mission
+            and growth trajectory. All project types, scopes, and sectors appeal
+            to me and I am able to easily adapt to teams of any size, as well as
+            engage comfortably with both consultants and clients alike.
+          </p>
+        </div>
+      </div>
+
+      <hr class="border-t-4" />
+
+      <a id="services"></a>
+      <div class="flex py-16 ml-xs">
+        <div class="mr-8 w-xs"></div>
+        <div class="flex-1">
+          <h1 class="text-3xl">Why hire an architect?</h1>
+          <p>
+            Choosing a professional to design and manage your project is one of
+            the most important decisions you’ll make. While you have many
+            options, a registered architect offers a unique combination of
+            skills, protection, and value that no other professional can.
+          </p>
+
+          <h2>Legal Protection:</h2>
+          <p>
+            The term "architect" is legally protected in the UK by the
+            Architects Registration Board (ARB). This guarantees a strict level
+            of professional competence, ethical conduct, and mandatory
+            professional indemnity insurance. Your project is backed by a
+            recognized professional with a duty of care to you, the client.
+          </p>
+
+          <h2>Comprehensive Expertise:</h2>
+          <p>
+            Our training isn’t limited to design. We are uniquely skilled to
+            navigate the entire project lifecycle — from initial concept and
+            planning applications to detailed technical design and on-site
+            project management. We act as your single point of contact, ensuring
+            a seamless process from start to finish.
+          </p>
+
+          <h2>Unmatched Value:</h2>
+          <p>
+            An architect’s value is often measured in the problems they prevent,
+            not just the beauty they create. By anticipating issues, managing
+            your budget, and ensuring a high-quality build, we help you avoid
+            costly mistakes and unlock the full potential of your property.
+          </p>
+
+          <h2>Your Trusted Advisor:</h2>
+          <p>
+            We are your advocate throughout the entire process. Our role is to
+            listen to your needs, translate them into a buildable design, and
+            then manage the team of contractors and consultants required to
+            bring that design to life.
+          </p>
+        </div>
+      </div>
+
+      <hr class="border-t-4" />
+
+      <form
+        action="https://formspree.io/f/mdklqyka"
+        method="POST"
+        id="contact"
+        class="mx-auto mt-16 flex w-xl"
+      >
+        <div class="flex-1">
+          <h1>Get in touch</h1>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="Your email address"
+            data-1p-ignore
+            data-lpignore="true"
+            data-bwignore="true"
+            data-form-type="other"
+            data-dashlane-disabled-on-field="true"
+            data-protonpass-ignore="true"
+            class="form-field"
+          />
+          <textarea
+            id="message"
+            name="body"
+            rows="5"
+            required
+            placeholder="Send a message."
+            class="form-field"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="form-field cursor-pointer bg-(--color-dylan-accent) text-(--color-dylan-background)"
+          >
+            Send message
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <footer
+      class="bg-(--color-dylan-accent) pt-32 text-(--color-dylan-background) relative z-50 mt-32"
+    >
+      <div class="mx-auto flex w-full max-w-7xl items-center justify-center">
+        <p class="w-3xs" id="copyright">© Studio Shea</p>
+        <p class="flex-1 text-center italic">
+          Studio Shea is a trading name of Studio Shea Architecture Limited.
+        </p>
+        <div class="w-3xs justify-end text-right">
+          <a
+            href="https://www.linkedin.com/in/dylanharm/"
+            target="_blank"
+            class="inline-flex"
+          >
+            <img src="/linkedin.png" alt="LinkedIn" width="32" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfZf88rAAAAAL7Jc8esU-j4a_v6Vu-z_K_XouGx"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
